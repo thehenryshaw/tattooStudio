@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/9888c2209f.js"></script>
+  <title>Tattoo Studio</title>
+</head>
+<body>
+  <!-- MODAL -->
+  <div class="modal fade" id="modalCenter" tabindex="-1" role="dialog" aria-labelledby="modalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-header__container">
+        <div class="modal-body p-0">
+            <button type="button" class="btn close close-btn" data-dismiss="modal" aria-label="Close">
+            <i class="far fa-times-circle" aria-hidden="true"></i>
+            </button>
+          <img class="modal-image w-100" src="" >
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- FORM -->
+  <div class="modal fade" id="formCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content form-content__container">
+        <div class="modal-header form-header__container">
+          <h5 class="modal-title">Заполните форму</h5>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-row form-group">
+              <div class="col">
+                <label for="recipient-name">Имя</label>
+                <input type="text" class="form-control" placeholder="Иван/Елена">
+              </div>
+              <div class="col">
+                <label>Фамилия</label>
+                <input type="text" class="form-control" placeholder="Иванов(на)">
+              </div>
+              <div class="col">
+                <label>Возраст</label>
+                <input type="number" class="form-control" placeholder="Полных лет">
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="col">
+                <label for="">Ваш номер телефона</label>
+                <input type="tel" class="form-control" placeholder="Tel">
+              </div>
+              <div class="col">
+                <label for="">Ваш email адрес</label>
+                <input type="email" class="form-control" placeholder="Email">
+              </div>
+            </div>
+            <div class="form-group pt-3">
+              <label>Место татуировки на теле</label>
+              <input type="text" class="form-control" placeholder="Рука (плечо, предплечье и т.д.)">
+            </div>
+            <div class="form-group">
+              <label>Размер татуировки (длина)</label>
+              <input type="number" class="form-control" placeholder="Укажите размер в сантиметрах">
+            </div>
+            <div class="form-group">
+              <label>Размер татуировки (ширина)</label>
+              <input type="number" class="form-control" placeholder="Укажите размер в сантиметрах">
+            </div>
+            <div class="form-group">
+              <label>Загрузите изображение</label>
+              <input type="file" class="form-control-file">
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer form-footer__container">
+          <button type="button" class="btn" data-dismiss="modal">Закрыть</button>
+          <button type="button" class="btn">Отправить</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- INFO -->
+  <div class="modal fade bd-modal-lg info" tabindex="-1" role="dialog" aria-labelledby="extraLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content p-5 info-container">
+        <p class="main-info">Для клиентов младше 18 лет нужно принести заявление от родителей в установленной форме.</p>
+        <h5>Разрешение на татуировку</h5>
+        <ol class="contract">
+          <li>Я (Ф.И.О. родителя или опекуна)</li>
+          <li>Д/М/Г рождения</li>
+          <li>Проживающий по адресу:</li>
+          <li>Контактный телефон для связи:</li>
+          <li>Разрешаю сыну/дочери (Ф.И.О. cына/дочери) сделать татуировку.</li>
+          <li>Дата ____________ Подпись ____________</li>
+        </ol>
+        <h6>Так же при себе необходимо иметь:</h6>
+        <ul>
+          <li>Паспорт ребенка</li>
+          <li>Заполненный Вами договор</li>
+          <li>Копия Вашего паспорта</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  
+  <!-- HEADER -->
+  <header class="d-flex w-100">
+    <div class="d-flex flex-wrap justify-content-around w-100 mt-3 header-items__container">
+      <div class="text-white text-uppercase menu-title">Tattoo</div>
+        <ul class="d-flex text-white text-uppercase list-unstyled mr-2 menu-list">
+          <li class="menu-item"><a href="#" data-id="Home" class="active">Home</a></li>
+          <li class="ml-5 menu-item"><a href="works.html">Работы</a></li>
+          <li class="ml-5 menu-item"><a href="#" data-id="Записаться">Записаться</a></li>
+          <li class="ml-5 menu-item"><a href="#" data-id="Обо мне">Обо мне</a></li>
+          <li class="ml-5 menu-item"><a href="#" data-id="Контакты">Контакты</a></li>
+        </ul>
+      <button class="d-flex btn menu-info" data-toggle="modal" data-target=".bd-modal-lg"><i class="fas fa-info-circle"></i></button>
+    </div>
+  </header>
+
+  <!-- SHOWCASE -->
+  <section class="showcase">
+    <div class="d-flex flex-column showcase-container">
+      <div class="d-flex showcase-image__container">
+        <div class="d-flex showcase-image__left"></div>
+        <div class="d-none d-md-flex showcase-image__right"></div>
+      </div>
+      <div class="d-flex">
+        <ul class="list-unstyled showcase-style__list">
+          <li class="showcase-style__item rectangle"></li>
+          <li class="showcase-style__item number"></li>
+          <li class="showcase-style__item dot-gold"></li>
+          <li class="showcase-style__item dot-grey__first"></li>
+          <li class="showcase-style__item dot-grey__second"></li>
+          <li class="showcase-style__item dot-grey__third"></li>
+        </ul>
+      </div>
+      <div class="d-flex showcase-title__container">
+        <h1 class="text-uppercase showcase-main__title">Ypertuy</h1>
+      </div>
+    </div>
+  </section>
+
+  <!-- PREVIEW -->
+  <section class="preview">
+    <div class="d-none d-md-flex justify-content-end">
+      <div class="overlay"></div>
+    </div>
+    <div class="d-flex flex-wrap flex-column align-items-center preview-image__container">
+      <ul class="d-flex flex-column list-unstyled preview-list"></ul>
+      <button type="button" class="d-flex btn text-uppercase more"><a href="works.html">Больше фото</a></button>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="d-flex w-100 flex-column align-items-center about">
+    <h1 class="d-flex justify-content-center text-uppercase about-title">About</h1>
+    <div class="d-flex justify-content-around">
+      <blockquote class="blockquote w-50">
+        <p class="mb-1 about-description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora blanditiis architecto error commodi vero? Alias ea, modi possimus laudantium aliquam magni saepe, officiis ipsa eveniet quidem nulla at fuga, exercitationem nemo sit inventore laboriosam culpa? Hic, architecto! Nulla aspernatur nemo dignissimos maiores et qui numquam ex, nihil animi cumque sit.</p>
+        <footer class="blockquote-footer about-description__footer">Ypertuy <span>|</span> <cite title="Мастер тату">Мастер тату</cite></footer>
+      </blockquote>
+      <div class="d-none d-md-block about-photo__radius">
+        <div class="about-photo"><img src="./img/content-img/ypertuy.jpg" alt="Ypertuy" class="about-photo__img"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- QUESTIONARY -->
+  <section class="d-flex align-items-center justify-content-center questionary">
+    <button class="btn w-50 h-25 questionary-form" data-toggle="modal" data-target="#formCenter">Заполните заявку</button>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="d-flex flex-column text-white contacts">
+    <div class="d-flex justify-content-between information-container">
+      <div class="location">
+        Поселок Парголово (Парнас), ул. Федора Абрамова, дом 8.<br>(вход со стороны двора)
+      </div>
+      <div class="contacts-social__icon">
+        <div class="social"><i class="fab fa-instagram icon"></i></div>
+        <div class="social mt-2"><i class="fab fa-vk icon"></i></div>
+      </div>
+    </div>
+    <p class="text-right copyright">&copy 2019 Rodionov Igor</p>
+  </footer>
+
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script src="main.js"></script>
+  <script src="getIndexData.js"></script>
+</body>
+</html>
