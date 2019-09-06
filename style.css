@@ -544,6 +544,9 @@ header {
   .showcase-image__left {
     width: 100%;
   }
+  .showcase-image__right {
+    width: 0;
+  }
   .menu-title:after {
     bottom: 7px;
   }
