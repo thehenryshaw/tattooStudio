@@ -181,7 +181,7 @@ header {
 
 .overlay {
   width: 45%;
-  height: 65px;
+  height: 75px;
   background-color: #010101;
 }
 
@@ -578,6 +578,10 @@ header {
 }
 
 @media (max-width: 600px) {
+  .header-items__container {
+    align-items: center;
+    flex-direction: column;
+  }
   .menu-item {
     font-size: 10px;
     margin-left: 7px !important;
@@ -590,11 +594,14 @@ header {
   .location {
     margin-left: 50px;
   }
-  .social {
-    margin-right: 10px;
+  .preview {
+    background-image: url("./img/preview-min.jpg");
   }
   .questionary-form {
     width: 75% !important;
+  }
+  .works {
+    background-image: url("./img/works-min.jpg");
   }
   .works-item__img {
     width: 200px;
@@ -607,11 +614,10 @@ header {
   .works-button:hover {
     width: 200px !important;
   }
+  .social {
+    margin-right: 10px;
+  }
   .info {
     height: 90vh;
-  }
-  .header-items__container {
-    align-items: center;
-    flex-direction: column;
   }
 }
