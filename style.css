@@ -84,17 +84,17 @@ header {
 }
 
 .showcase-container {
-  width: 100%;
-  height: 100vh;
-}
-
-.showcase-image__container {
+  position: relative;
   width: 100%;
   height: 100vh;
 }
 
 .showcase-image__left {
   width: 55%;
+  height: 100vh;
+  position: absolute;  
+  top: 0;
+  left: 0;
   background-image: url("./img/main-img1.jpg");
   background-position: center;
   background-size: cover;
@@ -104,6 +104,10 @@ header {
 
 .showcase-image__right {
   width: 45%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  right: 0;
   background-image: url("./img/main-img2.jpg");
   background-position: center;
   background-size: cover;
@@ -114,8 +118,9 @@ header {
 
 .showcase-style__list {
   width: 50px;
-  margin-top: -400px;
-  margin-left: 250px;
+  position: absolute;
+  height: 100px;
+  margin: 50px 0 0 250px;
   z-index: 1;
 }
 
@@ -126,7 +131,7 @@ header {
 }
 
 .number {
-  padding-bottom: 110px;
+  padding-bottom: 80px;
   background-repeat: no-repeat;
   background-image: url("./img/first-img.png");
 }
@@ -137,32 +142,13 @@ header {
   background-image: url("./img/dot-img.png");
 }
 
-.dot-grey__first {
-  height: 30px;
-  background-repeat: no-repeat;
-  background-image: url("./img/dot-img2.png");
-}
-
-.dot-grey__second {
-  height: 30px;
-  background-repeat: no-repeat;
-  background-image: url("./img/dot-img2.png");
-}
-
-.dot-grey__third {
-  height: 30px;
-  background-repeat: no-repeat;
-  background-image: url("./img/dot-img2.png");
-}
-
 .showcase-title__container {
   margin: 0 auto;
-  margin-top: -500px;
+  margin-bottom: 100px;
   z-index: 1;
 }
 
 .showcase-main__title {
-  height: auto;
   font-size: 5rem;
   font-weight: 700;
   letter-spacing: 20px;
