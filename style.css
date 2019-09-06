@@ -596,14 +596,12 @@ header {
   }
   .preview {
     background-size: auto 100%;
-    background-image: url("./img/preview-min.jpg");
   }
   .questionary-form {
     width: 75% !important;
   }
   .works {
     background-size: auto 100%;
-    background-image: url("./img/works-min.jpg");
   }
   .works-item__img {
     width: 200px;
