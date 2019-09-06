@@ -566,7 +566,7 @@ header {
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 650px) {
   .header-items__container {
     align-items: center;
     flex-direction: column;
