@@ -46,11 +46,11 @@ header {
   letter-spacing: 5px;
 }
 
-.menu-title:after {
-  content: url("./img/rectangle1.png");
+.menu-title::after {
   position: absolute;
   left: 80px;
   bottom: 12px;
+  content: url("./fonts/rectangle1.png");
 }
 
 .menu-list {
@@ -120,31 +120,32 @@ header {
   width: 50px;
   position: absolute;
   height: 100px;
-  margin: 50px 0 0 250px;
+  margin: 110px 0 0 250px;
   z-index: 1;
 }
 
 .rectangle {
   height: 70px;
   background-repeat: no-repeat;
-  background-image: url("./img/rectangle2.png");
+  background-image: url("./fonts/rectangle2.png");
 }
 
 .number {
-  padding-bottom: 80px;
+  margin-top: -10px;
+  padding-bottom: 70px;
   background-repeat: no-repeat;
-  background-image: url("./img/first-img.png");
+  background-image: url("./fonts/first-img.png");
 }
 
 .dot-gold {
   height: 30px;
   background-repeat: no-repeat;
-  background-image: url("./img/dot-img.png");
+  background-image: url("./fonts/dot-img.png");
 }
 
 .showcase-title__container {
   margin: 0 auto;
-  margin-bottom: 70px; /* Проверить при другом разрешении */
+  margin-bottom: 70px;
   z-index: 1;
 }
 
@@ -169,8 +170,8 @@ header {
   padding: 80px 0 80px 0;
 }
 
-.preview-image__container:before {
-  content: url("./img/rectangle2.png");
+.preview-image__container::before {
+  content: url("./fonts/rectangle2.png");
   background-repeat: no-repeat;
   position: absolute;
   right: 40px;
@@ -224,11 +225,12 @@ header {
   color: #010101 !important;
 }
 
-.preview-button:hover:after {
-  content: "\f00e";
-  font-family: FontAwesome;
-  font-size: 14px;
+.preview-button:hover::after {
   margin-left: 10px;
+  content: "\f00e";
+  font-family: 'Font Awesome 5 Free', 'Font Awesome 5 Brands';
+  font-size: 14px;
+  font-weight: 900;
   color: #010101 !important;
 }
 
@@ -250,13 +252,13 @@ header {
   text-decoration: none;
 }
 
-.more:after {
-  content: "\f30b";
+.more::after {
   margin-top: -4px;
   margin-left: 5px;
-  font-family: FontAwesome;
+  content: "\f30b";
+  font-family: 'Font Awesome 5 Free', 'Font Awesome 5 Brands';
   font-size: 18px;
-
+  font-weight: 900;
 }
 
 /* WORKS */
@@ -312,11 +314,12 @@ header {
   color: #010101 !important;
 }
 
-.works-button:hover:after {
-  content: "\f00e";
-  font-family: FontAwesome;
-  font-size: 14px;
+.works-button:hover::after {
   margin-left: 10px;
+  content: "\f00e";
+  font-family: 'Font Awesome 5 Free', 'Font Awesome 5 Brands';
+  font-size: 14px;
+  font-weight: 900;
   color: #010101 !important;
 }
 
@@ -548,7 +551,7 @@ header {
   .showcase-image__right {
     width: 0;
   }
-  .menu-title:after {
+  .menu-title::after {
     bottom: 12px;
   }
   .number {
@@ -557,6 +560,9 @@ header {
 }
 
 @media (max-width: 650px) {
+  .info {
+    height: 90vh;
+  }
   .header-items__container {
     align-items: center;
     flex-direction: column;
@@ -569,15 +575,26 @@ header {
     margin-left: 7px !important;
     letter-spacing: 0.1rem;
   }
-  .menu-title:after {
+  .menu-title::after {
     bottom: 7px;
   }
   .showcase-main__title {
     margin-left: 10px;
     font-size: 3rem;
   }
+  .showcase-style__list {
+    height: 125px;
+  }
+  .rectangle {
+    background-size: 3px;
+  }
   .number {
-    background-size: 30px;
+    margin-top: -15px;
+    background-size: 25px;
+  }
+  .dot-gold {
+    margin-top: -20px;
+    background-size: 7px;
   }
   .location {
     margin-left: 50px;
@@ -609,8 +626,5 @@ header {
   }
   .social {
     margin-right: 10px;
-  }
-  .info {
-    height: 90vh;
   }
 }
