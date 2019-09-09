@@ -1,5 +1,5 @@
   <!DOCTYPE html>
-  <html lang="en">
+  <html lang="ru">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -115,12 +115,14 @@
       <div class="d-flex flex-wrap justify-content-around w-100 mt-3 header-items__container">
         <div class="text-white text-uppercase menu-title">Tattoo</div>
           <ul class="d-flex text-white text-uppercase list-unstyled mr-2 menu-list">
-            <li class="menu-item"><a href="index.html" data-id="Home">Home</a></li>
+            <li class="menu-item"><a href="index.html" lang="en" data-id="Home">Home</a></li>
             <li class="ml-5 menu-item"><a href="#" class="active">Работы</a></li>
             <li class="ml-5 menu-item"><a href="#" data-id="Записаться">Записаться</a></li>
             <li class="ml-5 menu-item"><a href="#" data-id="Контакты">Контакты</a></li>
           </ul>
-        <button class="d-flex btn menu-info" data-toggle="modal" data-target=".bd-modal-lg"><i class="fas fa-info-circle"></i></button>
+        <button class="d-flex btn menu-info" data-toggle="modal" data-target=".bd-modal-lg">
+          <i class="fas fa-info-circle"></i>
+        </button>
       </div>
     </header>
 
@@ -133,7 +135,9 @@
 
     <!-- QUESTIONARY -->
     <section class="d-flex align-items-center justify-content-center questionary">
-      <button class="btn w-50 h-25 questionary-form" data-toggle="modal" data-target="#formCenter">Заполните заявку</button>
+      <button class="btn w-50 h-25 questionary-form" data-toggle="modal" data-target="#formCenter">
+        Заполните заявку
+      </button>
     </section>
   
     <!-- FOOTER -->
@@ -143,11 +147,19 @@
           Поселок Парголово (Парнас), ул. Федора Абрамова, дом 8.<br>(вход со стороны двора)
         </div>
         <div class="contacts-social__icon">
-          <div class="social"><i class="fab fa-instagram icon"></i></div>
-          <div class="social mt-2"><i class="fab fa-vk icon"></i></div>
+          <div class="social">
+            <a href="https://www.instagram.com/igormurk/?hl=ru" target="_blank">
+              <i class="fab fa-instagram icon"></i>
+            </a>
+           </div>
+          <div class="social mt-2">
+            <a href="https://vk.com/igormurk" target="_blank">
+              <i class="fab fa-vk icon"></i>
+            </a>
+          </div>
         </div>
       </div>
-      <p class="text-right copyright">&copy 2019 Rodionov Igor</p>
+      <p class="text-right copyright" lang="en">&copy 2019 Rodionov Igor</p>
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
